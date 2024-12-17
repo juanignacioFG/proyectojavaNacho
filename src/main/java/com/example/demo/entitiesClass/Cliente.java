@@ -1,4 +1,4 @@
-package entitiesClass;
+package com.example.demo.entitiesClass;
 
 public class Cliente {
     private int id;
