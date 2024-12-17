@@ -1,4 +1,4 @@
-package com.example.demo.entitiesClass;
+package com.example.demo.entities;
 
 import java.time.LocalDateTime;
 
@@ -7,6 +7,9 @@ public class Reserva {
     private int clienteId;
     private LocalDateTime fechaHora;
     private int numeroComensales;
+
+    public Reserva() {
+    }
 
     public Reserva(int id, int clienteId, LocalDateTime fechaHora, int numeroComensales) {
         this.id = id;

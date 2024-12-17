@@ -23,14 +23,6 @@ Este proyecto es una aplicación Java para gestionar reservas en un restaurante 
 <br>
   ## UML
 
-![imagen de uml](src/main/java/com/example/demo/imagen/Captura de pantalla (244).png)
+![imagen de uml](src/main/java/com/example/demo/imagen/uml.png)
 
-## Estructura del Proyecto
-
-```bash
-src/
-  ├── model/         (Clases Cliente, Reserva)
-  ├── dao/           (Acceso a datos: ClienteDAO, ReservaDAO)
-  ├── service/       (Lógica de negocio: Validaciones)
-  ├── app/           (Punto de entrada principal)
 
