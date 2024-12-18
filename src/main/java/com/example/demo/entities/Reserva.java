@@ -1,52 +1,77 @@
 package com.example.demo.entities;
 
-import java.time.LocalDateTime;
+import jakarta.persistence.*;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+
+import java.time.LocalDateTime;
+@Entity
+@NoArgsConstructor
+@Getter    //DA FALLO EL LOMBOK
+@Setter
 public class Reserva {
-    private int id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false)
+    private Long id;
+
     private int clienteId;
     private LocalDateTime fechaHora;
     private int numeroComensales;
+    @ManyToOne
+    @JoinColumn(name = "id_cliente",nullable = true)
+    private Cliente cliente;
 
-    public Reserva() {
-    }
-
-    public Reserva(int id, int clienteId, LocalDateTime fechaHora, int numeroComensales) {
-        this.id = id;
+    public Reserva(int clienteId, LocalDateTime fechaHora, int numeroComensales, Cliente cliente) {
         this.clienteId = clienteId;
         this.fechaHora = fechaHora;
         this.numeroComensales = numeroComensales;
+        this.cliente = cliente;
     }
 
-    public int getId() {
-        return id;
-    }
+            //constructor por defecto
 
-    public void setId(int id) {
-        this.id = id;
+
+    public Reserva(int clienteId) {
+        this.clienteId = clienteId;
     }
 
     public int getClienteId() {
         return clienteId;
     }
 
-    public void setClienteId(int clienteId) {
-        this.clienteId = clienteId;
-    }
-
     public LocalDateTime getFechaHora() {
         return fechaHora;
-    }
-
-    public void setFechaHora(LocalDateTime fechaHora) {
-        this.fechaHora = fechaHora;
     }
 
     public int getNumeroComensales() {
         return numeroComensales;
     }
 
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setClienteId(int clienteId) {
+        this.clienteId = clienteId;
+    }
+
+    public void setFechaHora(LocalDateTime fechaHora) {
+        this.fechaHora = fechaHora;
+    }
+
     public void setNumeroComensales(int numeroComensales) {
         this.numeroComensales = numeroComensales;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
     }
 }
