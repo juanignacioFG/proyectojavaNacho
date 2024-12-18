@@ -35,8 +35,7 @@ public class Reserva {
             //constructor por defecto
 
 
-    public Reserva(int clienteId) {
-        this.clienteId = clienteId;
+    private Reserva() {
     }
 
     public int getClienteId() {
