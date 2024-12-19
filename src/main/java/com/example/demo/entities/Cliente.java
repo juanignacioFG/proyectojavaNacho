@@ -5,9 +5,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@NoArgsConstructor
-@Getter
-@Setter
+
+
 @Entity
 public class Cliente {
 
@@ -56,5 +55,10 @@ public class Cliente {
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
 }
 
