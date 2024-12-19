@@ -71,6 +71,46 @@ Asegúrate de tener instalados los siguientes programas:
 
 ![endpints.png](src%2Fmain%2Fjava%2Fcom%2Fexample%2Fdemo%2Fimagen%2Fendpints.png)
 
+## Tests de Aceptación
+
+Este proyecto incluye tests de aceptación para verificar el correcto funcionamiento de los controladores y la lógica relacionada. Los tests han sido implementados usando `MockMvc` y cubren las operaciones principales de las entidades **Cliente** y **Reserva**.
+
+### Tests de Aceptación Realizados
+
+#### ClienteControlador
+- **Ver todos los clientes**: Prueba para obtener una lista de todos los clientes almacenados en la base de datos.
+- **Ver cliente por ID**: Prueba para recuperar un cliente específico utilizando su ID.
+- **Crear cliente**: Prueba para crear un nuevo cliente y validar su almacenamiento.
+- **Actualizar cliente**: Prueba para modificar un cliente existente.
+- **Eliminar cliente**: Prueba para eliminar un cliente y asegurar que ya no esté disponible.
+
+#### ReservaControlador
+- **Ver todas las reservas**: Prueba para obtener una lista de todas las reservas almacenadas en la base de datos.
+- **Ver reserva por ID**: Prueba para recuperar una reserva específica utilizando su ID.
+- **Crear reserva**: Prueba para crear una nueva reserva, asociándola con un cliente existente.
+- **Actualizar reserva**: Prueba para modificar una reserva existente, incluyendo datos relacionados con el cliente.
+- **Eliminar reserva**: Prueba para eliminar una reserva y asegurar que ya no esté disponible.
+
+### Herramientas Utilizadas
+- **MockMvc**: Para simular peticiones HTTP y validar las respuestas del controlador.
+- **Spring Boot Test**: Framework de pruebas integrado en Spring Boot.
+- **Junit 5**: Para la ejecución de los tests.
+
+Los tests garantizan que las funcionalidades del proyecto sean robustas y cumplan con los requisitos establecidos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Contacto creador
 |                                                                                **Juan Ignacio Fauró**                                                                                 |
 |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
