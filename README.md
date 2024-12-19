@@ -1,8 +1,4 @@
-## Contacto colaborador
-|                                                                                **Juan Ignacio Fauró**                                                                                 |
-|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-|            <a href="https://github.com/juanignacioFG"> <img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a>            |
- <a href="https://www.linkedin.com/in/juan-ignacio-fauro/"> <img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
+
 # Proyecto Java Individual - Sistema de Gestión de Reservas y Clientes
 
 ## Descripción
